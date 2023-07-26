@@ -1,0 +1,21 @@
+server:
+  port: 7001
+
+config:
+  aws:
+    region: eu-central-1
+    s3:
+      url: http://s3.localhost.localstack.cloud:4566
+      bucket-name: document-bucket
+      access-key: localstack
+      secret-key: localstack
+
+kafka:
+  bootstrap-address: localhost:29092
+  group-id: com.github.eemrecvl
+  key-serializer-class: org.apache.kafka.common.serialization.StringSerializer
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
+  key-deserializer-class: org.apache.kafka.common.serialization.StringDeserializer
+  value-deserializer-class: io.confluent.kafka.serializers.KafkaAvroDeserializer
+  schema-registry-url-key: schema.registry.url
+  schema-registry-url: http://localhost:8081

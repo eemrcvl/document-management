@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "a0960ef0-94f9-4c47-830b-ed903b3c0950",
+		"name": "document-management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8285450"
+	},
+	"item": [
+		{
+			"name": "upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"documents\": [\n        {\n            \"documentCode\": \"1\",\n            \"pageNumber\": 1,\n            \"documentData\": \"1lkajsdkljaslkd123\"\n        },\n        {\n            \"documentCode\": \"1\",\n            \"pageNumber\": 2,\n            \"documentData\": \"1lkajsdkljaslkd1231lkajsdkljaslkd123\"\n        },\n        {\n            \"documentCode\": \"2\",\n            \"pageNumber\": 1,\n            \"documentData\": \"asdasdasd123123asdasdasd\"\n        },\n        {\n            \"documentCode\": \"2\",\n            \"pageNumber\": 2,\n            \"documentData\": \"xasdasd123asd\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

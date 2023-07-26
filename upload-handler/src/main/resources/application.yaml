@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+config:
+  aws:
+    region: eu-central-1
+    s3:
+      url: http://s3.localhost.localstack.cloud:4566
+      bucket-name: document-bucket
+      access-key: localstack
+      secret-key: localstack
+
+kafka:
+  bootstrap-address: localhost:29092
+  group-id: com.github.eemrecvl
+  schema-registry-url-key: schema.registry.url
+  schema-registry-url: http://localhost:8081
